@@ -169,9 +169,11 @@ footer{
 </div>
 <div class="box">
   <h2>🛡️ دليل الثقة</h2>
-  <p>صور حقيقية من تبادل جوه اللعبة</p>
+  <p>اضغط لعرض صور الدليل</p>
 
-  <div class="trust-images">
+  <button onclick="toggleTrust()">📸 عرض / إخفاء الدليل</button>
+
+  <div id="trust" style="display:none;" class="trust-images">
     <img src="./images/trust1.webp">
     <img src="./images/trust2.webp">
     <img src="./images/trust3.webp">
@@ -181,6 +183,7 @@ footer{
     <img src="./images/trust7.webp">
   </div>
 </div>
+
 
 
   
@@ -201,7 +204,18 @@ footer{
 <footer>
 ⚠️ الموقع غير تابع لـ Roblox أو Blox Fruits
 </footer>
+<script>
+function toggleTrust() {
+  var x = document.getElementById("trust");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
+
 
