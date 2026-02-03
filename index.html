@@ -12,10 +12,43 @@
 
   <style>
     /* الكود اللي ادتهولك */
+ 
   </style>
+  .navbar {
+  position: sticky;
+  top: 0;
+  background: #111;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #f39c12;
+}
+
+section {
+  padding: 40px 0;
+}
+
 </head>
 
 <style>
+<nav class="navbar">
+  <a href="#home">الرئيسية</a>
+  <a href="#services">الخدمات</a>
+  <a href="#trust">دليل الثقة</a>
+  <a href="#contact">التواصل</a>
+</nav>
+  
 body{
   margin:0;
   font-family:Arial, sans-serif;
@@ -227,6 +260,7 @@ function toggleTrust() {
 
 </body>
 </html>
+
 
 
 
